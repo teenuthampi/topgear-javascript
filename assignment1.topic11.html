@@ -1,0 +1,27 @@
+
+<html>
+<body>
+<input id="number1" type="number" name="" value="">
+<input id="number2" type="number" name="" value="">
+<input id="number3" type="number" name="" value="">
+<button type="button" id="check-value" name="button">OK</button>
+    </body>
+</html>
+<script>
+document.getElementById('check-value').addEventListener('click', (e) => {
+  var x = document.getElementById('number1').value;
+  var y = document.getElementById('number2').value;
+  var z = document.getElementById('number3').value;
+  if (x + y + z >= 0) {
+    alert("The sign is +");
+  } else if (x < 0 && y < 0 && z < 0) {
+    alert("The sign is +");
+  } else if (x > 0 && y < 0 && z < 0) {
+    alert("The sign is +");
+  } else if (x < 0 && y > 0 && z < 0) {
+    alert("The sign is +");
+  } else {
+    alert("The sign is -");
+  }
+});
+</script>
